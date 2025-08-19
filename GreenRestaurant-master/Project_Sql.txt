@@ -1,0 +1,28 @@
+Table Creation:
+CREATE TABLE Product(P_Num int PRIMARY KEY AUTO_INCREMENT, P_Name varchar(20), Catagory varchar(20), Price int)
+CREATE TABLE BillTb1(B_Num int PRIMARY KEY AUTO_INCREMENT, Staff varchar(20), B_Date date, amount int);
+
+Count query
+select Max(P_Num) from ProductTb1
+
+Show Product query
+select * from producttb1
+
+FilterButton query
+select * from producttb1 where Catagory = '"+FilterCb.getSelectedItem().toString()+"'"
+
+Product Insertion query
+insert into ProductTb1 values(?,?,?,?)
+
+Product Deletion query
+delete from ProductTb1 where P_Num=?
+
+Updation query
+Update ProductTb1 Set P_Name=?, Catagory=?, Price=? where P_Num=?
+
+Bill insert
+insert into billtb1 values(?,?,?,?)
+select * from billtb1
+
+
+Mysql password:#formysql1
